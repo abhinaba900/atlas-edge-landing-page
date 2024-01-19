@@ -1,9 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useEffect } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import bg1 from './image/banner-1-bg.jpg';
-import bg2 from './image/banner-2-bg.jpg';
-import bg3 from './image/banner-3-bg.jpg';
+import bg1 from "./image/banner-1-bg.jpg";
+import bg2 from "./image/banner-2-bg.jpg";
+import bg3 from "./image/banner-3-bg.jpg";
+import next from "./image/arrow2.jpg";
+import prev from "./image/arrow2 (1).jpg";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -13,6 +16,7 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "./TopAutoSlider.css";
 function TopAutoSlider() {
+  
   return (
     <div className="swiper-top-section">
       <div className="swiper-wrapper">
@@ -28,7 +32,10 @@ function TopAutoSlider() {
           modules={[Autoplay, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide style={{ backgroundImage: `url(${bg1})` }} id="content-1">
+          <SwiperSlide
+            style={{ backgroundImage: `url(${bg1})` }}
+            id="content-1"
+          >
             <div className="title-section">
               <h2>
                 BY THE EXPERT,
@@ -41,10 +48,16 @@ function TopAutoSlider() {
               now
             </div>
           </SwiperSlide>
-          <SwiperSlide style={{ backgroundImage: `url(${bg2})` }} id="content-2">
+          <SwiperSlide
+            style={{ backgroundImage: `url(${bg2})` }}
+            id="content-2"
+          >
             <div className="title-section">
               <h2>
-                UI/UX & <span>Design <br /> Management</span>
+                UI/UX &{" "}
+                <span>
+                  Design <br /> Management
+                </span>
               </h2>
             </div>
             <div className="apply-btn">
@@ -52,11 +65,17 @@ function TopAutoSlider() {
               more
             </div>
           </SwiperSlide>
-          <SwiperSlide style={{ backgroundImage: `url(${bg3})` }} id="content-3">
+          <SwiperSlide
+            style={{ backgroundImage: `url(${bg3})` }}
+            id="content-3"
+          >
             <div className="title-section">
               <h2>
-                FASHION 
-                 {" "} <span>Business <br />Management</span>
+                FASHION{" "}
+                <span>
+                  Business <br />
+                  Management
+                </span>
               </h2>
             </div>
             <div className="apply-btn">

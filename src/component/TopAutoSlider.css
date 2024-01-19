@@ -63,12 +63,12 @@ body {
 
 .mySwiper .swiper-button-next {
   right: 5%;
-  background-image: url("http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/right-arrow-white.svg");
+  background-image: url("https://atlasedge.in/wp-content/themes/astra/assets/images/right-arrow-white.svg");
 }
 
 .mySwiper .swiper-button-prev {
   left: 90%;
-  background-image: url("http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/left-arrow-white.svg");
+  background-image: url("https://atlasedge.in/wp-content/themes/astra/assets/images/left-arrow-white.svg");
 }
 
 .mySwiper .swiper-button-next:after,
