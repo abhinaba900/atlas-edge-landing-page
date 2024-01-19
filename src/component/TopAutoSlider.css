@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  text-align: left;
+  --white: #ffffff;
+  --black: #231f20;
+  --blue: #00bed6;
+  scroll-behavior: smooth;
+}
+
+.swiper-top-section {
+  width: 100%;
+  height: 43.75em;
+  overflow-x: hidden;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 35.75em;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper {
+  position: absolute; /* Adjusted to relative */
+  width: 100%;
+  height: 100%;
+  overflow: visible !important;
+}
+
+/* Swiper button custom styles */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 90%;
+  z-index: 10;
+}
+
+.mySwiper .swiper-button-next {
+  right: 5%;
+  background-image: url('http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/right-arrow-white.svg');
+}
+
+.mySwiper .swiper-button-prev {
+  left: 90%;
+  background-image: url('http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/left-arrow-white.svg');
+}
+
+.mySwiper .swiper-button-next:after,
+.mySwiper .swiper-button-prev:after {
+  display: none;
+}
+
+/* Background sections */
+#content-1, #content-2, #content-3 {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#content-1 {
+  background-image: url("http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/homepage/banner-1-bg.jpg");
+}
+
+#content-2 {
+  background-image: url("http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/homepage/banner-2-bg.jpg");
+}
+
+#content-3 {
+  background-image: url("http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/homepage/banner-3-bg.jpg");
+}
+
+/* Additional styles */
+.title-section {
+  box-shadow: #00000066;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.title-section > h2 > span {
+  font-size: 0.923em;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: center;
+}
+
+.apply-btn {
+  background: linear-gradient(180deg, rgba(0, 190, 214, 1) 0%, rgba(15, 32, 108, 1) 100%);
+  max-width: 10em; /* Reduced from 11.5em */
+  font-weight: bold;
+  color: var(--white);
+  border-radius: 50%;
+  width: fit-content;
+  text-align: center;
+  align-content: center;
+  text-transform: uppercase;
+  font-size: 2em; /* Reduced from 2.625em */
+  padding: 1em; /* Reduced from 1.524em */
+  text-align: center;
+  position: absolute;
+  top: 85%;
+  z-index: 99;
+}
+
