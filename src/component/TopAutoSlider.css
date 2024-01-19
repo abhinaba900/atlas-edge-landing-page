@@ -9,6 +9,7 @@ body {
   --black: #231f20;
   --blue: #00bed6;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .swiper-top-section {
