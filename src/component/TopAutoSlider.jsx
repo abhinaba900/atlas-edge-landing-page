@@ -1,7 +1,9 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import bg1 from './image/banner-1-bg.jpg';
+import bg2 from './image/banner-2-bg.jpg';
+import bg3 from './image/banner-3-bg.jpg';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -26,7 +28,7 @@ function TopAutoSlider() {
           modules={[Autoplay, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide id="content-1">
+          <SwiperSlide style={{ backgroundImage: `url(${bg1})` }} id="content-1">
             <div className="title-section">
               <h2>
                 BY THE EXPERT,
@@ -39,7 +41,7 @@ function TopAutoSlider() {
               now
             </div>
           </SwiperSlide>
-          <SwiperSlide id="content-2">
+          <SwiperSlide style={{ backgroundImage: `url(${bg2})` }} id="content-2">
             <div className="title-section">
               <h2>
                 UI/UX & <span>Design <br /> Management</span>
@@ -50,7 +52,7 @@ function TopAutoSlider() {
               more
             </div>
           </SwiperSlide>
-          <SwiperSlide id="content-3">
+          <SwiperSlide style={{ backgroundImage: `url(${bg3})` }} id="content-3">
             <div className="title-section">
               <h2>
                 FASHION 

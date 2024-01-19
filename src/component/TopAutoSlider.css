@@ -20,7 +20,6 @@ body {
 .swiper-wrapper {
   width: 100%;
   height: 35.75em;
-
 }
 
 .swiper-slide {
@@ -64,12 +63,12 @@ body {
 
 .mySwiper .swiper-button-next {
   right: 5%;
-  background-image: url('http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/right-arrow-white.svg');
+  background-image: url("http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/right-arrow-white.svg");
 }
 
 .mySwiper .swiper-button-prev {
   left: 90%;
-  background-image: url('http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/left-arrow-white.svg');
+  background-image: url("http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/left-arrow-white.svg");
 }
 
 .mySwiper .swiper-button-next:after,
@@ -78,23 +77,13 @@ body {
 }
 
 /* Background sections */
-#content-1, #content-2, #content-3 {
+#content-1,
+#content-2,
+#content-3 {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-#content-1 {
-  background-image: url("http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/homepage/banner-1-bg.jpg");
-}
-
-#content-2 {
-  background-image: url("http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/homepage/banner-2-bg.jpg");
-}
-
-#content-3 {
-  background-image: url("http://139.59.48.12/atlas-edge/wp-content/themes/astra/assets/images/homepage/banner-3-bg.jpg");
 }
 
 /* Additional styles */
@@ -114,7 +103,11 @@ body {
 }
 
 .apply-btn {
-  background: linear-gradient(180deg, rgba(0, 190, 214, 1) 0%, rgba(15, 32, 108, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 190, 214, 1) 0%,
+    rgba(15, 32, 108, 1) 100%
+  );
   max-width: 10em; /* Reduced from 11.5em */
   font-weight: bold;
   color: var(--white);
@@ -130,4 +123,3 @@ body {
   top: 85%;
   z-index: 99;
 }
-
