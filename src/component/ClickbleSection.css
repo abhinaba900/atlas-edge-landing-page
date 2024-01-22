@@ -1,0 +1,244 @@
+.clickble-section-parent {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.clickble-section-child-div {
+  width: 100%;
+  cursor: pointer;
+}
+body{
+  overflow-x: hidden;
+}
+.clickble-section-child-div > .text-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid;
+}
+#atlas-edge-video-wrapper{
+  width: 50%;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.parent-div-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  background-color: #071d49;
+}
+
+.parent-div-container > div {
+  width: 50%;
+  padding: 1em;
+}
+
+.parent-div-container > .image-div {
+  width: 100%;
+  height: 100%;
+}
+
+.parent-div-container > .image-div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+  aspect-ratio: 16/9;
+  padding: 5px 20px;
+  margin-left: 1em;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-and-text-section {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  font-weight: 500;
+  font-size: 1.15em;
+}
+
+.heading-section-three-heading {
+  color: #9ca5b6;
+  font-weight: 500;
+  font-size: 0.899em;
+}
+
+.heading-section-three-heading > h3 {
+  margin-bottom: 1.8em;
+}
+
+.button-section-and-image > button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 13px 23px;
+  border: 1px solid #222222;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: #fff;
+  color: #222222;
+  :hover {
+    border-color: #000000;
+    background: #f7f7f7;
+  }
+}
+
+.button-section-and-image > img {
+  object-fit: contain;
+  display: block;
+}
+
+.button-section-and-image {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  color: white;
+  font-weight: 500;
+  font-size: 1.15em;
+}
+.Bottom-button-section {
+  margin-top: 2em;
+}
+
+.Bottom-button-section > button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 13px 23px;
+  border: 1px solid #222222;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: #0f206c;
+  color: white;
+  :hover {
+    border-color: #000000;
+    background: #f7f7f7;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .clickble-section-parent {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .clickble-section-child-div {
+    /* Adjustments for smaller screen */
+  }
+  .image-div {
+    width: 100%;
+  }
+  .clickble-section-child-div > .text-section {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .parent-div-container {
+    display: flex;
+    flex-direction: row; /* Adjust this as needed */
+    flex-wrap: wrap-reverse;
+    /* Set a height to force wrapping for testing */
+  }
+
+  .parent-div-container > div {
+    /* Adjust the width so items can wrap */
+    width: 100%; /* Example width, adjust as needed */
+  }
+
+  .parent-div-container > .image-div > img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .image-and-text-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+  }
+
+  .heading-section-three-heading {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.8em;
+  }
+
+  .heading-section-three-heading > h3 {
+    margin-bottom: 1em;
+  }
+
+  .button-section-and-image > button {
+    padding: 0.625em 0.938em;
+    font-size: 0.875em;
+  }
+  .button-section-and-image {
+    padding: 1em;
+  }
+  #atlas-edge-video-wrapper{
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 868px) {
+  .parent-div-container {
+    flex-direction: row; /* Example change */
+  }
+
+  .parent-div-container > div {
+    width: 50%; 
+  }
+
+  .parent-div-container > .image-div {
+    width: 50%; 
+  }
+
+  .parent-div-container > .image-div > img {
+    aspect-ratio: 16/9; 
+    padding: 10px; 
+    margin-left: 20px;
+  }
+
+  .image-and-text-section {
+    display: flex;
+    align-items: center;
+    gap: 2em; 
+  }
+
+  .heading-section-three-heading {
+    /* Adjust font size or color if necessary */
+    font-size: 1em; /* Example change */
+  }
+
+  .button-section-and-image > button {
+    /* Adjust button size or spacing */
+    padding: 15px 25px; /* Example change */
+    font-size: 18px; /* Example change */
+  }
+
+  .button-section-and-image {
+    /* Adjust layout or spacing */
+    display: flex;
+    align-items: center;
+    gap: 2em; /* Increased gap */
+  }
+}

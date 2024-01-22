@@ -1,91 +1,64 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useState, useEffect } from "react";
+import "./DubbleAutoSlider.css"; // Import your CSS file
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/scrollbar";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+const Slider = ({ slides, interval, controlledIndex }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-import "./DubbleAutoSlider.css";
+  useEffect(() => {
+      const intervalId = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+      }, interval);
 
-// import required modules
-import { Keyboard, Autoplay, Navigation, Pagination } from "swiper/modules";
+      return () => clearInterval(intervalId);
+  }, [currentIndex, slides.length, interval, controlledIndex]);
 
-export default function App() {
-  const swiperRef = useRef(null);
-
-  const navigateNext = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slideNext(2); // Slide 2 steps forward
+  useEffect(() => {
+    if (controlledIndex !== undefined) {
+      setCurrentIndex(controlledIndex);
     }
-  };
+  }, [controlledIndex]);
 
-  const navigatePrev = () => {
-    if (swiperRef.current) {
-      swiperRef.current.slidePrev(2); // Slide 2 steps backward
-    }
-  };
   return (
-    <div className="swiper-top-section">
-      <div className="swiper-wrapper">
-        <Swiper
-          ref={swiperRef}
-          slidesPerView={2}
-          slidesPerGroupSkip={2}
-          breakpoints={{
-            769: {
-              slidesPerView: 2,
-              slidesPerGroup: 2,
-            },
-            1025: {
-              slidesPerView: 2,
-              slidesPerGroup: 2,
-            },
-          }}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          onNavigationNext={() => navigateNext(2)}
-          onNavigationPrev={() => navigatePrev(2)}
-          modules={[Keyboard, Navigation, Pagination, Autoplay]}
-          className="mySwiper dubble-swiper"
-        >
-          <SwiperSlide>
-            <img src="https://cdn.magloft.com/github/swiper/images/page-001.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://cdn.magloft.com/github/swiper/images/page-002.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://cdn.magloft.com/github/swiper/images/page-003.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://cdn.magloft.com/github/swiper/images/page-004.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://cdn.magloft.com/github/swiper/images/page-005.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://cdn.magloft.com/github/swiper/images/page-006.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://cdn.magloft.com/github/swiper/images/page-007.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://cdn.magloft.com/github/swiper/images/page-008.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://cdn.magloft.com/github/swiper/images/page-009.jpg" />
-          </SwiperSlide>
-        </Swiper>
+    <div className="slider-container">
+      <div
+        className="slider"
+        style={{
+          transform: `translateX(-${currentIndex * 100}%)`,
+          transition: "transform 0.5s ease-in-out",
+        }}
+      >
+        {slides.map((slide, index) => (
+          <div className="slide" key={index}>
+            {slide}
+          </div>
+        ))}
       </div>
     </div>
   );
-}
+};
+
+const DubbleAutoSlider = () => {
+  const [index, setIndex] = useState(0);
+  const slides1 = ["1", "2", "3"]; // Replace with your content
+  const slides2 = ["A", "B", "C"]; // Replace with your content
+  const interval = 5000; // Adjust the interval as needed
+
+  const nextSlide = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % slides1.length);
+  };
+
+  const prevSlide = () => {
+    setIndex((prevIndex) => (prevIndex - 1 + slides1.length) % slides1.length);
+  };
+
+  return (
+    <div className="app-container">
+      <Slider slides={slides1} interval={interval} controlledIndex={index} />
+      <Slider slides={slides2} interval={interval} controlledIndex={index}/>
+      <button onClick={prevSlide}>Previous</button>
+      <button onClick={nextSlide}>Next</button>
+    </div>
+  );
+};
+
+export default DubbleAutoSlider;

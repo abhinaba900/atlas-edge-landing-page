@@ -124,3 +124,43 @@ body {
   top: 85%;
   z-index: 99;
 }
+@media (max-width: 52.75em) {
+  .swiper-top-section {
+    height: 40em; /* Adjust height for mobile */
+  }
+
+  .swiper-wrapper {
+    height: 30em; /* Adjust height for mobile */
+  }
+
+  .swiper-slide {
+    font-size: 1em;
+    
+  }
+
+  .mySwiper {
+    position: relative; /* Change position for mobile */
+  }
+
+  .mySwiper .swiper-button-next,
+  .mySwiper .swiper-button-prev {
+    top: 80%; /* Adjust button position */
+    transform: scale(0.8); /* Scale down buttons */
+  }
+
+  .title-section {
+    font-size: 2em; /* Adjust title size */
+    padding: 1.25em; /* Add padding */
+  }
+
+  .title-section > h2 > span {
+    font-size: 0.8em; /* Adjust span size within title */
+  }
+
+  .apply-btn {
+    max-width: 8em; /* Adjust button width */
+    font-size: 1.5em; /* Adjust font size */
+    padding: 0.75em; /* Adjust padding */
+    top: 90%; /* Adjust position */
+  }
+}

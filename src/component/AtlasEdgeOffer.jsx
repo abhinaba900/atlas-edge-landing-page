@@ -22,7 +22,7 @@ function AtlasEdgeOffer() {
           </article>
         </div>
         <div className="atlas-edge-video-wrapper">
-          <ReactPlayer url={"https://youtu.be/VhWExH3zajM"} playing={true} loop muted controls={true} />
+          <ReactPlayer style={{display: "block", margin: "auto"}} url={"https://youtu.be/VhWExH3zajM"} playing={true} loop muted controls={true} />
         </div>
       </div>
     </div>
