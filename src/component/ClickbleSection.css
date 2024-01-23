@@ -110,6 +110,8 @@ body{
 }
 .Bottom-button-section {
   margin-top: 2em;
+  display: flex;
+  gap: 1em;
 }
 
 .Bottom-button-section > button {
@@ -160,7 +162,9 @@ body{
     /* Adjust the width so items can wrap */
     width: 100%; /* Example width, adjust as needed */
   }
-
+  .Bottom-button-section{
+    flex-direction: column;
+  }
   .parent-div-container > .image-div > img {
     width: 100%;
     padding: 0;

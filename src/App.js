@@ -6,6 +6,7 @@ import DubbleAutoSlider from './component/DubbleAutoSlider';
 import ScrollingAnimation from './component/ScrollingAnimation';
 import ClickbleSection from './component/ClickbleSection';
 import WelcomToAtlusEdge from './component/WelcomToAtlusEdge';
+import LoremIpsumDolor from './component/LoremIpsumDolor';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <ScrollingAnimation />
       <WelcomToAtlusEdge />
       <ScrollingAnimation />
+      <LoremIpsumDolor />
+      <hr />
     </div>
   );
 }

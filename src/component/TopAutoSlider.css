@@ -14,13 +14,13 @@ body {
 
 .swiper-top-section {
   width: 100%;
-  height: 43.75em;
+  height: 45.75em;
   overflow-x: hidden;
 }
 
 .swiper-wrapper {
   width: 100%;
-  height: 35.75em;
+  height: 39.75em;
 }
 
 .swiper-slide {
@@ -124,24 +124,30 @@ body {
   top: 85%;
   z-index: 99;
 }
-@media (max-width: 52.75em) {
+@media all and (max-width: 52.75em) {
   .swiper-top-section {
-    height: 40em; /* Adjust height for mobile */
+    height: 45em; /* Adjust height for mobile */
   }
 
   .swiper-wrapper {
-    height: 30em; /* Adjust height for mobile */
+    height: 35em; /* Adjust height for mobile */
   }
 
   .swiper-slide {
     font-size: 1em;
-    
   }
 
   .mySwiper {
     position: relative; /* Change position for mobile */
   }
-
+  .mySwiper .swiper-button-next {
+    right: 5%;
+    background-image: url("https://atlasedge.in/wp-content/themes/astra/assets/images/right-arrow-white.svg");
+  }
+  .mySwiper .swiper-button-prev {
+    left: 80%;
+    background-image: url("https://atlasedge.in/wp-content/themes/astra/assets/images/left-arrow-white.svg");
+  }
   .mySwiper .swiper-button-next,
   .mySwiper .swiper-button-prev {
     top: 80%; /* Adjust button position */
