@@ -4,6 +4,12 @@ import { Button } from "@chakra-ui/react";
 function ClickbleSection() {
   const [visible1, setvisible1] = React.useState(false);
   const [visible2, setvisible2] = React.useState(false);
+  const [visible3, setvisible3] = React.useState(false);
+  const [visible4, setvisible4] = React.useState(false);
+  const [visible5, setvisible5] = React.useState(false);
+
+
+
 
   return (
     <div className="clickble-section-parent">
@@ -128,7 +134,7 @@ function ClickbleSection() {
             </div>
             <div className="image-div">
               <img
-              width={"100%"}
+                width={"100%"}
                 src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/fashion-design-listing.jpg"
                 alt="main-image"
               />
@@ -136,7 +142,214 @@ function ClickbleSection() {
           </div>
         )}
       </div>
-      <div className="Bottom-button-section" >
+      <div
+        className="clickble-section-child-div"
+        onClick={() => {
+          setvisible3(!visible3);
+          setvisible1(false);
+          setvisible2(false);
+        }}
+      >
+        <div className="text-section">
+          <h2>03</h2>
+          <h2>Executive Program in Digital Marketing</h2>
+        </div>
+        {visible3 && (
+          <div className="parent-div-container">
+            <div>
+              <div>
+                <div className="image-and-text-section">
+                  <img
+                    src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/schedule.svg"
+                    alt=""
+                  />
+                  <p>11 Months</p>
+                </div>
+                <div className="image-and-text-section">
+                  <img
+                    src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/highlight.svg"
+                    alt=""
+                  />
+                  <p>At ATLAS Campus Mumbai</p>
+                </div>
+                <div className="image-and-text-section">
+                  <img
+                    src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/time.svg"
+                    alt=""
+                  />
+                  <p>3 days a week | 3 hours per day</p>
+                </div>
+              </div>
+              <div className="heading-section-three-heading">
+                <h3>
+                  Your fashion brand – conceptualised, designed, and developed
+                  during the course
+                </h3>
+                <h3>
+                  Go-to-market strategy and business model for your fashion
+                  brand
+                </h3>
+                <h3>Create a capsule collection for your brand</h3>
+              </div>
+              <div className="button-section-and-image">
+                <button>KNOW MORE</button>
+                <button>APPLY NOW</button>
+                <img
+                  src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/download.svg"
+                  alt="download-image   "
+                />
+              </div>
+            </div>
+            <div className="image-div">
+              <img
+                width={"100%"}
+                src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/fashion-design-listing.jpg"
+                alt="main-image"
+              />
+            </div>
+          </div>
+        )}
+      </div>
+      <div
+        className="clickble-section-child-div"
+        onClick={() => {
+          setvisible4(!visible4);
+          setvisible1(false);
+          setvisible2(false);
+          setvisible3(false)
+        }}
+      >
+        <div className="text-section">
+          <h2>04</h2>
+          <h2>⁠Executive Program in Investment Management</h2>
+        </div>
+        {visible4 && (
+          <div className="parent-div-container">
+            <div>
+              <div>
+                <div className="image-and-text-section">
+                  <img
+                    src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/schedule.svg"
+                    alt=""
+                  />
+                  <p>11 Months</p>
+                </div>
+                <div className="image-and-text-section">
+                  <img
+                    src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/highlight.svg"
+                    alt=""
+                  />
+                  <p>At ATLAS Campus Mumbai</p>
+                </div>
+                <div className="image-and-text-section">
+                  <img
+                    src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/time.svg"
+                    alt=""
+                  />
+                  <p>3 days a week | 3 hours per day</p>
+                </div>
+              </div>
+              <div className="heading-section-three-heading">
+                <h3>
+                  Your fashion brand – conceptualised, designed, and developed
+                  during the course
+                </h3>
+                <h3>
+                  Go-to-market strategy and business model for your fashion
+                  brand
+                </h3>
+                <h3>Create a capsule collection for your brand</h3>
+              </div>
+              <div className="button-section-and-image">
+                <button>KNOW MORE</button>
+                <button>APPLY NOW</button>
+                <img
+                  src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/download.svg"
+                  alt="download-image   "
+                />
+              </div>
+            </div>
+            <div className="image-div">
+              <img
+                width={"100%"}
+                src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/fashion-design-listing.jpg"
+                alt="main-image"
+              />
+            </div>
+          </div>
+        )}
+      </div>
+      <div
+        className="clickble-section-child-div"
+        onClick={() => {
+          setvisible5(!visible5);
+          setvisible1(false);
+          setvisible2(false);
+          setvisible3(false);
+          setvisible4(false)
+        }}
+      >
+        <div className="text-section">
+          <h2>05</h2>
+          <h2>Executive MBA</h2>
+        </div>
+        {visible5 && (
+          <div className="parent-div-container">
+            <div>
+              <div>
+                <div className="image-and-text-section">
+                  <img
+                    src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/schedule.svg"
+                    alt=""
+                  />
+                  <p>11 Months</p>
+                </div>
+                <div className="image-and-text-section">
+                  <img
+                    src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/highlight.svg"
+                    alt=""
+                  />
+                  <p>At ATLAS Campus Mumbai</p>
+                </div>
+                <div className="image-and-text-section">
+                  <img
+                    src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/time.svg"
+                    alt=""
+                  />
+                  <p>3 days a week | 3 hours per day</p>
+                </div>
+              </div>
+              <div className="heading-section-three-heading">
+                <h3>
+                  Your fashion brand – conceptualised, designed, and developed
+                  during the course
+                </h3>
+                <h3>
+                  Go-to-market strategy and business model for your fashion
+                  brand
+                </h3>
+                <h3>Create a capsule collection for your brand</h3>
+              </div>
+              <div className="button-section-and-image">
+                <button>KNOW MORE</button>
+                <button>APPLY NOW</button>
+                <img
+                  src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/download.svg"
+                  alt="download-image   "
+                />
+              </div>
+            </div>
+            <div className="image-div">
+              <img
+                width={"100%"}
+                src="https://atlasedge.in/wp-content/themes/astra/assets/images/homepage/fashion-design-listing.jpg"
+                alt="main-image"
+              />
+            </div>
+          </div>
+        )}
+      </div>
+      <div className="Bottom-button-section">
         <button>EXPLORE ALL PROGRAMS</button>
         <button>ENQUIRE NOW</button>
       </div>

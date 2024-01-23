@@ -1,30 +1,104 @@
 .app-container {
   display: flex;
-  flex-direction: column;
+  height: 40em;
+  background-color: #0F206C;
+  justify-content: center;
+  gap: 1em;
+  margin: auto;
   align-items: center;
 }
 
 .slider-container {
   overflow: hidden;
-  width: 300px; /* Set your desired width */
-  margin-bottom: 20px;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
 }
 
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  margin: 0;
+  padding: 0;
 }
 
 .slide {
   flex: 0 0 100%;
-  text-align: center;
-  font-size: 24px; /* Adjust font size as needed */
-  padding: 20px;
-  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 1.5em; /* Adjust font size as needed */
+  padding: 1.25em;
   box-sizing: border-box;
 }
 
-button {
-  margin: 5px;
+.button-container {
+  position: relative;
+  display: flex;
+  gap: 1em;
+  top: 30%;
+}
+
+#prev-button, #next-button {
+  background-repeat: no-repeat; 
+  background-size: contain;
+  border: none; 
+  text-indent: -9999px; 
+  width: 3.125em; 
+  height: 3.125em; 
+  background-color: transparent;
   cursor: pointer;
+}
+.textcontaner>h3{
+  font-size: 1.8em;
+  font-weight: bold 400;
+  opacity: 100%;
+  color: #FFFFFF;
+}
+.textcontaner>article{
+  font-size: 0.889em;
+  opacity: 60%;
+  color: #FFFFFF;
+}
+#prev-button {
+  background-image: url("https://atlasedge.in/wp-content/themes/astra/assets/images/left-arrow-white.svg");
+}
+
+#next-button {
+  background-image: url("https://atlasedge.in/wp-content/themes/astra/assets/images/right-arrow-white.svg");
+}
+
+#next-button::after {
+  display: none;
+}
+
+.slide h2 {
+  margin: 0;
+  padding: 0;
+  color: #00BED6;
+  font-size: 25em;
+  opacity: 100%;
+  font-weight: 900;
+}
+
+@media all and (max-width: 52.75em) {
+  .app-container{
+    flex-direction: column;
+    height: 80em;
+  }
+  .slider-container{
+    width: 100%;
+  }
+
+  .button-container{
+    position: static;
+  }
+  .slide h2{
+    font-size: 10em;
+  }
+  h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    
+  }
+  
 }

@@ -17,6 +17,7 @@ function App() {
       <ClickbleSection />
       <ScrollingAnimation />
       <WelcomToAtlusEdge />
+      <ScrollingAnimation />
     </div>
   );
 }
