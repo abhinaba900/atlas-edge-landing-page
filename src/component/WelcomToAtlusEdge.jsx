@@ -5,18 +5,23 @@ function WelcomToAtlusEdge() {
   return (
     <div className="common-section">
       <div id="atlas-edge-offer-wrapper">
-        <div  id="second-content">
-          <h3>Welcome to ATLAS Edge</h3>
+        <div id="second-content">
+          <h3>
+            The ATLAS campus inspires creativity, fosters collaboration and
+            challenges the status quo.
+          </h3>
           <article>
-            Each corner of the ATLAS campus is designed to nurture every
-            student’s potential. Located in the bustling heart of the business
-            district of Mumbai, in BKC, you’ll find a place that’s more than
-            just a campus - it’s an invitation to grow.
+            Located in the heart of Mumbai, it is the perfect combination of
+            ample breathing space to encourage growth, connectivity to the
+            biggest companies in the country, and a vibrant culture steeped in
+            business, art, cinema, and unique experiences. This, coupled with
+            the tech-enabled spaces ensures that learning doesn’t stop at the
+            campus gates.
           </article>
         </div>
         <div id="atlas-edge-video-wrapper">
           <ReactPlayer
-           width={"100%"}
+            width={"100%"}
             url={"https://youtu.be/ePRNeqFo0Do"}
             playing={true}
             loop
@@ -25,6 +30,7 @@ function WelcomToAtlusEdge() {
           />
         </div>
       </div>
+    
     </div>
   );
 }

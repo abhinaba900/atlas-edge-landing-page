@@ -40,48 +40,66 @@ body {
   display: flex;
   justify-content: space-around;
   align-self: flex-start;
-  align-items: stretch;
+  align-items: flex-start;
 }
 
 .atlas-edge-offer-content {
   width: 50%;
   padding: 1em;
   margin: 1em;
+  padding-top: 0;
   line-height: 1.7;
 }
 #second-content{
-  width: 50%;
-  padding: 1em;
+  width: 40%;
+  padding: 3em;
+  padding-top: 0;
   margin: 1em;
   line-height: 1.7;
+
 
 }
 
 #second-content>h3 {
-  font-size: 1.4em;
-  font-weight: bold 600;
+  font-size: 1.8em;
   font-family: var(--PO);
-  font-weight:bold 400;
+  font-weight:bold 900;
+  margin-top:0;
+  line-height: 1.7;
 }
 
 #second-content>article {
   font-size: 0.888em;
   opacity: 100%;
   font-family: var(--PO);
-  font-weight: bold 400;
+  font-weight: semibold 400;
   color: var(--textColor);
 }
 .atlas-edge-offer-content h3 {
-  font-size: 1.4em;
+  font-size: 1.8em;
   font-family: "poppins";
-  font-weight: bold 400;
+  font-weight: bold 900;
   opacity: 100%;
-  font-weight: bold 600;
 }
 
 .atlas-edge-offer-content article {
   font-size: 0.888em;
   color: var(--textColor);
+  font-weight: bold 400;
+}
+.button-section{
+  padding:0 3em;
+  margin-left: 1em;
+  position: relative;
+  bottom: 100px;
+}
+.button-section>button{
+  padding: 1em;
+  font-size: 0.888em;
+  font-weight: bold 400;
+  color: white;
+  background-color: #071d49;
+  border-radius: 5px;
 }
 
 .atlas-edge-video-wrapper{
