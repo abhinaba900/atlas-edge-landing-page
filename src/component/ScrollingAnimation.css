@@ -1,12 +1,15 @@
 .appContainer {
   width: 100vw;
-  height: auto;
+  height: 20em;
   color: #000000;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
 }
 .wrapper {
   width: 100%;
@@ -16,6 +19,8 @@
   justify-content: center;
   flex-direction: column;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .marquee {
