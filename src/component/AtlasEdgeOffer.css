@@ -40,6 +40,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-self: flex-start;
+  align-items: stretch;
 }
 
 .atlas-edge-offer-content {
@@ -57,16 +58,24 @@ body {
 }
 
 #second-content>h3 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: bold 600;
+  font-family: var(--PO);
+  font-weight:bold 400;
 }
 
 #second-content>article {
   font-size: 0.888em;
+  opacity: 100%;
+  font-family: var(--PO);
+  font-weight: bold 400;
   color: var(--textColor);
 }
 .atlas-edge-offer-content h3 {
-  font-size: 1.8em;
+  font-size: 1.4em;
+  font-family: "poppins";
+  font-weight: bold 400;
+  opacity: 100%;
   font-weight: bold 600;
 }
 

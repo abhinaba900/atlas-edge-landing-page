@@ -1,11 +1,12 @@
 .app-container {
   display: flex;
-  height: 40em;
+  height: 35em;
   background-color: #0F206C;
   justify-content: center;
   gap: 1em;
   margin: auto;
   align-items: center;
+  position: relative;
 }
 
 .slider-container {
@@ -33,10 +34,11 @@
 }
 
 .button-container {
-  position: relative;
+  position: absolute;
   display: flex;
   gap: 1em;
-  top: 30%;
+  top: 80%;
+  left: 52%;
 }
 
 #prev-button, #next-button {
@@ -50,13 +52,13 @@
   cursor: pointer;
 }
 .textcontaner>h3{
-  font-size: 1.8em;
+  font-size: 1em;
   font-weight: bold 400;
   opacity: 100%;
   color: #FFFFFF;
 }
 .textcontaner>article{
-  font-size: 0.889em;
+  font-size: 0.799em;
   opacity: 60%;
   color: #FFFFFF;
 }
@@ -84,7 +86,8 @@
 @media all and (max-width: 52.75em) {
   .app-container{
     flex-direction: column;
-    height: 80em;
+    height: 50em;
+    margin-top: 2em;
   }
   .slider-container{
     width: 100%;
