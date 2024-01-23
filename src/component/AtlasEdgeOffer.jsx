@@ -6,7 +6,6 @@ function AtlasEdgeOffer() {
     <div className="common-section">
       <div className="atlas-edge-offer-wrapper">
         <div className="atlas-edge-offer-content">
-          {" "}
           <h3>
             ATLAS Edge offers executive and professional programs for the
             industry, by the industry and of the industry.

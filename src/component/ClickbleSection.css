@@ -140,9 +140,7 @@ body{
     padding: 10px;
   }
 
-  .clickble-section-child-div {
-    /* Adjustments for smaller screen */
-  }
+  
   .image-div {
     width: 100%;
   }
@@ -157,17 +155,18 @@ body{
 
   .parent-div-container {
     display: flex;
-    flex-direction: row; /* Adjust this as needed */
+    flex-direction: row; 
     flex-wrap: wrap-reverse;
-    /* Set a height to force wrapping for testing */
   }
 
   .parent-div-container > div {
-    /* Adjust the width so items can wrap */
-    width: 100%; /* Example width, adjust as needed */
+    width: 100%; 
   }
   .Bottom-button-section{
     flex-direction: column;
+    gap: 0.3em;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .parent-div-container > .image-div > img {
     width: 100%;
