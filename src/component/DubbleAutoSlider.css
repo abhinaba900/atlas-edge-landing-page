@@ -102,3 +102,31 @@
   }
   
 }
+
+
+@media screen and (min-width:1024px) and (max-width:1366px) {
+  
+  .app-container{
+    height: 80em;
+    flex-direction: column;
+  }
+  .slider-container{
+    width: 80%;
+  }
+  .button-container{
+    position: static;
+  }
+}
+@media screen and (min-width:912px) and (max-width:1366px) {
+  
+  .app-container{
+    height: 80em;
+    flex-direction: column;
+  }
+  .slider-container{
+    width: 80%;
+  }
+  .button-container{
+    position: static;
+  }
+}

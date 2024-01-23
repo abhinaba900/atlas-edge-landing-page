@@ -22,15 +22,18 @@ body {
   width: 90%;
   margin: 0 auto;
   /* height: 28em; */
+  padding-right: 1em;
   margin-bottom: 1em;
 }
 
 .atlas-edge-offer-wrapper {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-self: flex-start;
   align-items: center;
-  padding: 1em;
+  padding: 2em;
 }
 
 #atlas-edge-offer-wrapper {
@@ -88,8 +91,12 @@ body {
 
 @media all and (max-width: 896px) {
   .atlas-edge-offer-wrapper{
-    width: 100%;
+    width: 88%;
     flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    padding-left: 0.8em;
   }
   .atlas-edge-offer-content {
   width: 100%;
@@ -97,9 +104,10 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.7;
+  margin-bottom: 1em;
 }
  #second-content{
-  width: 100%;
+  width: 90%;
   padding: 1em;
   margin: 0;
   padding: 0;
@@ -112,7 +120,7 @@ body {
  }
 
   .atlas-edge-video-wrapper{
-    width: 100%;
+    width: 90%;
   }
   .common-section {
     width: 100%;
@@ -122,5 +130,72 @@ body {
 }
 
 @media all and (max-width: 1280px) {
+  #atlas-edge-video-wrapper{
+    margin-top: 3em;
+    width: 100%;
+    padding: 1em;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1366px) {
+
+  .atlas-edge-offer-wrapper{
+    width: 100%;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+   .atlas-edge-offer-content {
+  width: 100%;
+  padding: 1em;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  line-height: 1.7;
+  margin-bottom: 3em;
+}
+
+ #atlas-edge-offer-wrapper{
+   flex-direction: column;
+   align-items: center;
+   font-size: 1.5em;
+ }
   
+ #second-content{
+  width: 90%;
+  padding: 1em;
+ }
+
+}
+
+
+@media screen and (min-width:912px) and (max-width:1368px) {
+
+  .atlas-edge-offer-wrapper{
+    width: 100%;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+   .atlas-edge-offer-content {
+  width: 100%;
+  padding: 1em;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  line-height: 1.7;
+  margin-bottom: 3em;
+}
+
+ #atlas-edge-offer-wrapper{
+   flex-direction: column;
+   align-items: center;
+   font-size: 1.5em;
+ }
+  
+ #second-content{
+  width: 90%;
+  padding: 1em;
+ }
+
 }
