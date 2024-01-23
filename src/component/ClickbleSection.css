@@ -147,8 +147,12 @@ body{
     width: 100%;
   }
   .clickble-section-child-div > .text-section {
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
   }
 
   .parent-div-container {

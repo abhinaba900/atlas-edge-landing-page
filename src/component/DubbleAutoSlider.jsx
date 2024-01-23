@@ -30,7 +30,7 @@ const Slider = ({ slides, interval, controlledIndex, isHtmlContent }) => {
     }
     return (
       <div className="slide" key={index}>
-        <h2>{slide}</h2>
+        <h2 className="slide-text">{slide}</h2>
       </div>
     );
   };
@@ -41,7 +41,7 @@ const Slider = ({ slides, interval, controlledIndex, isHtmlContent }) => {
         className="slider"
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
-          transition: "transform 0.5s ease-in-out",
+          transition: "transform linear 0.8s",
         }}
       >
         {slides.map(renderSlide)}

@@ -126,7 +126,7 @@ body {
 }
 @media all and (max-width: 52.75em) {
   .swiper-top-section {
-    height: 45em; /* Adjust height for mobile */
+    height: 40em; /* Adjust height for mobile */
   }
 
   .swiper-wrapper {

@@ -86,7 +86,7 @@
 @media all and (max-width: 52.75em) {
   .app-container{
     flex-direction: column;
-    height: 50em;
+    height: 42em;
     margin-top: 2em;
   }
   .slider-container{
@@ -96,8 +96,21 @@
   .button-container{
     position: static;
   }
+  .slide{
+    width: fit-content;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 0;
+    border-bottom: 0;
+    white-space: normal;    
+  }
+  
   .slide h2{
     font-size: 10em;
+    
   }
   h2{
     margin-block-start: 0;
