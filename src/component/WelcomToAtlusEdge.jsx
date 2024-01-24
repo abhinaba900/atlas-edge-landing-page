@@ -21,7 +21,10 @@ function WelcomToAtlusEdge() {
         </div>
         <div id="atlas-edge-video-wrapper">
           <ReactPlayer
-            width={"100%"}
+           width={"90%"}
+            height={"100%"}
+            style={{ objectFit: "cover" }}
+            className="react-player"
             url={"https://youtu.be/ePRNeqFo0Do"}
             playing={true}
             loop
@@ -30,7 +33,6 @@ function WelcomToAtlusEdge() {
           />
         </div>
       </div>
-    
     </div>
   );
 }

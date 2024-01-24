@@ -22,6 +22,7 @@ body{
 }
 #atlas-edge-video-wrapper{
   width: 50%;
+  height: 100%;
   display: block;
   border-radius: 10px;
   overflow: hidden;
@@ -145,14 +146,22 @@ body{
     width: 100%;
   }
   .clickble-section-child-div > .text-section {
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    width: 95%;
+    align-items: flex-start;
     padding: 5px;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     gap: 0;
   }
 
+  .clickble-section-child-div > .text-section > h2 {
+    font-size: 1.2em;
+  }
+  .clickble-section-child-div > .text-section > h2:first-child {
+  font-weight: normal;
+
+  }
   .parent-div-container {
     display: flex;
     flex-direction: row; 
@@ -163,11 +172,15 @@ body{
     width: 100%; 
   }
   .Bottom-button-section{
-    flex-direction: column;
+    width: 90%;
     gap: 0.3em;
     padding-top: 0;
     padding-bottom: 0;
   }
+
+   .Bottom-button-section > button {
+     font-size: 0.7em;
+   }
   .parent-div-container > .image-div > img {
     width: 100%;
     padding: 0;
@@ -175,13 +188,12 @@ body{
   }
 
   .image-and-text-section {
-    flex-direction: column;
-    text-align: center;
+    text-align: left;
     gap: 0.5em;
   }
 
   .heading-section-three-heading {
-    text-align: center;
+    text-align: left;
     padding: 1em;
     font-size: 0.8em;
   }
@@ -191,8 +203,12 @@ body{
   }
 
   .button-section-and-image > button {
+    background: transparent;
+    color: white;
     padding: 0.625em 0.938em;
-    font-size: 0.875em;
+    font-size: 0.6em;
+    font-weight: bold 400;
+    border-bottom: 2px solid white;
   }
   .button-section-and-image {
     padding: 1em;
@@ -203,6 +219,9 @@ body{
   border-radius: 10px;
   overflow: hidden;
 }
+ .button-section-and-image > img{
+   width: 13%; 
+ }
 }
 
 /* Small devices (tablets, 768px and up) */

@@ -19,7 +19,7 @@
 
 .slider {
   display: flex;
-  transition: transform 0.8s linear;
+  transition: transform 0.8s linear 2s loop infinite;
   margin: 0;
   padding: 0;
   white-space: inherit;
@@ -94,7 +94,11 @@
   }
 
   .button-container{
-    position: static;
+    position:static;
+    margin-right: 58%;
+    margin-top: ;
+    /* top: 95%;
+    left: 0; */
   }
   .slide{
     width: fit-content;

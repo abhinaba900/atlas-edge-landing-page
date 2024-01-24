@@ -1,5 +1,5 @@
-import React from 'react'
-import './AtlasEdgeOffer.css'
+import React from "react";
+import "./AtlasEdgeOffer.css";
 import ReactPlayer from "react-player";
 function AtlasEdgeOffer() {
   return (
@@ -21,11 +21,19 @@ function AtlasEdgeOffer() {
           </article>
         </div>
         <div className="atlas-edge-video-wrapper">
-          <ReactPlayer style={{display: "block", margin: "auto"}} url={"https://youtu.be/VhWExH3zajM"} playing={true} loop muted controls={true} />
+          <ReactPlayer
+           style={{display:"block",margin:"auto"}}
+            className="atlas-edge-video"
+            url={"https://youtu.be/VhWExH3zajM"}
+            playing={true}
+            loop
+            muted
+            controls={true}
+          />
         </div>
       </div>
     </div>
   );
 }
 
-export default AtlasEdgeOffer
+export default AtlasEdgeOffer;

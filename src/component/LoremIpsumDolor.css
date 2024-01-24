@@ -33,7 +33,7 @@
   opacity: 100%;
   font-weight:bold 300;
   border-bottom: 1px solid #707070;
-  font-size: 1em;
+  font-size: 0.799em;
 }
 
 hr{
@@ -63,6 +63,10 @@ hr{
     width: 90%;
     margin: 0;
     padding: 0;
+  }
+
+  #main-wrapper > .content-wrapper > h3 {
+    font-size: 1.3em;
   }
     
 }
