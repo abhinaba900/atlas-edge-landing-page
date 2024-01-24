@@ -21,15 +21,26 @@ function AtlasEdgeOffer() {
           </article>
         </div>
         <div className="atlas-edge-video-wrapper">
-          <ReactPlayer
-           style={{display:"block",margin:"auto"}}
+          {/* <ReactPlayer
+            style={{ display: "block", margin: "auto" }}
             className="atlas-edge-video"
             url={"https://youtu.be/VhWExH3zajM"}
             playing={true}
             loop
             muted
             controls={true}
-          />
+          /> */}
+          <iframe
+            className="atlas-edge-video"
+            style={{ display: "block", margin: "auto" }}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/VhWExH3zajM?autoplay=1&mute=1&loop=1&playlist=VhWExH3zajM"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
       </div>
     </div>

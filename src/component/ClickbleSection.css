@@ -250,6 +250,8 @@ body{
     gap: 2em; 
   }
 
+  
+
   .heading-section-three-heading {
     /* Adjust font size or color if necessary */
     font-size: 1em; /* Example change */
@@ -266,5 +268,42 @@ body{
     display: flex;
     align-items: center;
     gap: 2em; /* Increased gap */
+  }
+}
+
+
+@media all and (min-width:768px) and (max-width:1024px) {
+  .button-section-and-image > button {
+    background: transparent;
+    color: white;
+    padding: 0.625em 0.938em;
+    font-size: 0.6em;
+    font-weight: bold 400;
+    border-bottom: 2px solid white;
+  }
+
+  .parent-div-container {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap-reverse;
+  }
+
+    .parent-div-container > div {
+    width: 90%; 
+    margin: auto;
+  }
+
+   .Bottom-button-section{
+    width: 90%;
+    gap: 0.3em;
+   
+  }
+   .clickble-section-child-div > .text-section {
+    width: 95%;
+    align-items: flex-start;
+    padding: 5px;
+    flex-direction: column;
+    text-align: left;
+    gap: 0;
   }
 }

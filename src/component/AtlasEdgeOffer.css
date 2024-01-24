@@ -185,6 +185,7 @@ body {
   #atlas-edge-video-wrapper{
     margin-top: 3em;
     width: 100%;
+    height: auto;
     padding: 1em;
     display: block;
     margin: auto;
